@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cake Donuts da Ka</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fffafa;
+      color: #3a2c2c;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(120deg, #f78ca0, #fbc7d4);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #fff;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #b23b5b;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #f78ca0;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .sobre {
+      text-align: center;
+    }
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      display: block;
+    }
+    .card p {
+      padding: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .cardapio {
+      background-color: #fff0f5;
+      border-radius: 10px;
+      padding: 40px;
+    }
+    .cardapio h3 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      color: #b23b5b;
+    }
+    .item {
+      margin-bottom: 15px;
+    }
+    .item strong {
+      display: block;
+      font-size: 1.1rem;
+      color: #5a2d2d;
+    }
+    .item span {
+      font-size: 0.95rem;
+      color: #7d5a5a;
+    }
+    .pedido, .personalizado {
+      background-color: #ffe9e4;
+      border-radius: 10px;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .pedido a, .personalizado a {
+      background-color: #f78ca0;
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #b23b5b;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cake Donuts da Ka</h1>
+    <p>Donuts artesanais com sabor de bolo 💕</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#produtos">Galeria</a>
+    <a href="#pedido">Peça Agora</a>
+    <a href="#personalizado">Personalizados</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre" class="sobre">
+    <h2>Quem Somos</h2>
+    <p>Na Cake Donuts da Ka, criamos experiências doces únicas combinando a fofura dos bolos com a crocância dos donuts. Tudo feito com amor, ingredientes naturais e muito capricho.</p>
+  </section>
+
+  <section id="cardapio" class="cardapio">
+    <h3>Cardápio</h3>
+    <div class="item">
+      <strong>Donut de Brigadeiro - R$ 7,00</strong>
+      <span>Coberto com chocolate ao leite e granulado.</span>
+    </div>
+    <div class="item">
+      <strong>Donut de Morango com Leite Ninho - R$ 8,00</strong>
+      <span>Recheado e coberto com morango e leite em pó.</span>
+    </div>
+    <div class="item">
+      <strong>Donut de Nutella com Nozes - R$ 9,50</strong>
+      <span>Recheado com Nutella e coberto com nozes caramelizadas.</span>
+    </div>
+    <div class="item">
+      <strong>Donut Vegano de Frutas Vermelhas - R$ 8,50</strong>
+      <span>Massa sem ovos/lactose, com geleia natural.</span>
+    </div>
+    <div class="item">
+      <strong>Mini Donuts Sortidos (kit c/ 6) - R$ 18,00</strong>
+      <span>Vários sabores em versão mini, ideal para festas e lembranças.</span>
+    </div>
+  </section>
+
+  <section id="produtos">
+    <h2>Galeria</h2>
+    <div class="produtos">
+      <div class="card">
+        <img src="img/chocolate.jpeg" alt="Donut de Chocolate">
+        <p>Donut de Chocolate</p>
+      </div>
+      <div class="card">
+        <img src="img/recheados.jpeg" alt="Donut Recheado">
+        <p>Donut Recheado</p>
+      </div>
+      <div class="card">
+        <img src="img/stch.jpeg" alt="Donut Colorido">
+        <p>Donut decorado</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pedido" class="pedido">
+    <h2>Peça Agora</h2>
+    <p>Atendemos por delivery e também em eventos. Entre em contato pelo WhatsApp e faça seu pedido personalizado!</p>
+    <a href="https://wa.me/5521989912046" target="_blank">Falar no WhatsApp</a>
+  </section>
+
+  <section id="personalizado" class="personalizado">
+    <h2>Pedidos Personalizados</h2>
+    <p>Quer donuts com tema especial, nomes, datas ou cores personalizadas para sua festa ou evento? Clique no botão abaixo e fale conosco diretamente pelo WhatsApp. Criamos sob medida para você!</p>
+    <a href="https://wa.me/5521989912046?text=Olá! Quero fazer um pedido personalizado de donuts." target="_blank">Solicitar Pedido Personalizado</a>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Email: cakedonutsdaka@gmail.com</p>
+    <p>Endereço: Rua do Planalto, 51 - Casa 1, São Gonçalo - RJ</p>
+    <p>Telefone: (21) 989912046</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Cake Donuts da Ka. Todos os direitos reservados.</p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5521989912046" target="_blank">💬</a>
+
+</body>
+</html>
